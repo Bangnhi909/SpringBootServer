@@ -77,7 +77,7 @@ public class NoteController {
                     userRepository.findById(id),
                     title,
                     description,
-                    new SimpleDateFormat("HH:mm dd/MM/yyyy").format(new Date())
+                    new SimpleDateFormat("dd/MM/yyyy").format(new Date())
             );
             noteRepository.save(newNote);
 
